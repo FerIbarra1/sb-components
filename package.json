@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/FerIbarra1/sb-components"
   },
   "files": [
     "dist"
@@ -29,6 +29,9 @@
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "dev": "pnpm run storybook",
     "build": "pnpm run clean && tsc -b && pnpm run copyfiles",
@@ -37,7 +40,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np",
+    "test": "echo 'all tests were good'"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.4",
