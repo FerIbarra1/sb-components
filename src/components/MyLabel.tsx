@@ -1,7 +1,7 @@
 import './MyLabel.css';
 
 
-interface Props {
+export interface Props {
     /**
      * The text to display
      */
